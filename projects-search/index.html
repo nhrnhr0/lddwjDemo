@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>אפליקציה שלך</title>
+  </head>
+  <body>
+    <a href="./../operation-manager"> חזרה לדף מנהל תפעולים </a>
+
+    <div class="page operations-director-search">
+      <aside class="filters">
+        <div class="filter-section">
+          <h2>פרויקטים</h2>
+          <select multiple>
+            <option value="all" selected>כל הפרויקטים</option>
+            <option value="project1">פרויקט 1</option>
+            <option value="project2">פרויקט 2</option>
+            <!-- הוספת אפשרויות נוספות לפרויקטים -->
+          </select>
+        </div>
+        <div class="filter-section">
+          <h2>סוגי טופסים</h2>
+          <select multiple>
+            <option value="all" selected>כל סוגי הטופסים</option>
+            <option value="morningBrief">תדריך בוקר</option>
+            <option value="levelMeasuring">מדידת מפסלים</option>
+            <option value="workdiary">יומן עבודה</option>
+            <!-- הוספת אפשרויות נוספות לסוגי טופסים -->
+          </select>
+        </div>
+        <div class="filter-section">
+          <h2>מנהלי אתר</h2>
+          <select multiple>
+            <option value="all" selected>כל מנהלי האתר</option>
+            <option value="user1">יוסי</option>
+            <option value="user2">אבי</option>
+            <!-- הוספת אפשרויות נוספות למשתמשים -->
+          </select>
+        </div>
+        <div class="filter-section">
+          <h2>תאריכים</h2>
+          <ul class="quick-links">
+            <li><a href="#">היום</a></li>
+            <li><a href="#">השבוע</a></li>
+            <li><a href="#">החודש</a></li>
+          </ul>
+          <div class="custom-date">
+            <input type="date" placeholder="מתאריך" />
+            <input type="date" placeholder="עד תאריך" />
+          </div>
+          <button class="filter-btn">החל</button>
+        </div>
+      </aside>
+      <main class="content">
+        <div class="search-field">
+          <input type="text" placeholder="חיפוש..." />
+          <svg
+            fill="#000000"
+            height="20px"
+            width="20px"
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 490.4 490.4"
+            xml:space="preserve"
+          >
+            <g>
+              <path
+                d="M484.1,454.796l-110.5-110.6c29.8-36.3,47.6-82.8,47.6-133.4c0-116.3-94.3-210.6-210.6-210.6S0,94.496,0,210.796
+		s94.3,210.6,210.6,210.6c50.8,0,97.4-18,133.8-48l110.5,110.5c12.9,11.8,25,4.2,29.2,0C492.5,475.596,492.5,463.096,484.1,454.796z
+		 M41.1,210.796c0-93.6,75.9-169.5,169.5-169.5s169.6,75.9,169.6,169.5s-75.9,169.5-169.5,169.5S41.1,304.396,41.1,210.796z"
+              />
+            </g>
+          </svg>
+        </div>
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>תאריך הגשת הטופס</th>
+              <th>פרויקט</th>
+              <th>מקט פרויקט</th>
+              <th>מנהל אתר</th>
+
+              <th>סוג טופס</th>
+
+              <th>טפסים</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2023-08-15</td>
+              <td>פרויקט 1</td>
+              <td>jd-123</td>
+              <td>יוסי</td>
+              <td>תדריך בוקר</td>
+              <td><a href="#">הצג טופס</a></td>
+            </tr>
+            <tr>
+              <td>2023-08-15</td>
+              <td>פרויקט 2</td>
+              <td>jd-577</td>
+              <td>אבי</td>
+              <td>מדידת מפסלים</td>
+
+              <td><a href="#">הצג טופס</a></td>
+            </tr>
+            <!-- הוספת שורות נוספות -->
+          </tbody>
+        </table>
+      </main>
+    </div>
+  </body>
+</html>
