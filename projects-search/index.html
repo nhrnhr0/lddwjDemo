@@ -76,9 +76,28 @@
             </g>
           </svg>
         </div>
+
+        <!-- actions
+            ייצא טפסים שנבחרו לPDF
+            חשב סכום חומרים מיומן עבודה
+            מחק טפסים שנבחרו
+        -->
+        <div class="actions">
+          <label for="actions"> פעולות: </label>
+          <select name="actions" id="actions-select">
+            <option value=""></option>
+            <option value="export">ייצא טפסים שנבחרו לPDF</option>
+            <option value="sum">חשב סכום חומרים מיומן עבודה</option>
+            <option value="delete">מחק טפסים שנבחרו</option>
+          </select>
+          <button class="action-btn">בצע</button>
+        </div>
         <table class="form-table">
           <thead>
             <tr>
+              <th>
+                <input type="checkbox" onclick="select_all()" class="maincheckbox" />
+              </th>
               <th>תאריך הגשת הטופס</th>
               <th>פרויקט</th>
               <th>מקט פרויקט</th>
@@ -91,6 +110,9 @@
           </thead>
           <tbody>
             <tr>
+              <td>
+                <input type="checkbox" class="subcheckbox" />
+              </td>
               <td>2023-08-15</td>
               <td>פרויקט 1</td>
               <td>jd-123</td>
@@ -99,6 +121,9 @@
               <td><a href="#">הצג טופס</a></td>
             </tr>
             <tr>
+              <td>
+                <input type="checkbox" class="subcheckbox" />
+              </td>
               <td>2023-08-15</td>
               <td>פרויקט 2</td>
               <td>jd-577</td>
@@ -112,5 +137,15 @@
         </table>
       </main>
     </div>
+
+    <script>
+      function select_all(e) {
+        let main = document.querySelector(".maincheckbox");
+        let sub = document.querySelectorAll(".subcheckbox");
+        sub.forEach((element) => {
+          element.checked = main.checked;
+        });
+      }
+    </script>
   </body>
 </html>

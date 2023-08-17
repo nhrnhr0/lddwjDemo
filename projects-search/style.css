@@ -161,3 +161,13 @@ th {
     fill: #999;
     margin-right: 5px;
 }
+
+
+select#actions-select {
+    width: min-content;
+}
+
+.actions {
+    width: 90%;
+    margin: auto;
+}
