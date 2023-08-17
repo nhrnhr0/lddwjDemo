@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.page {
+    /* display: none; */
+    display: flex;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 20px;
+        overflow: hidden;
+}
+.wraper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    
+}
+
+.operations-director-search {
+    
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    overflow: hidden;
+    
+}
+
+.filters {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section h2 {
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+select,
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.quick-links {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links li {
+    margin-bottom: 5px;
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+}
+
+.custom-date {
+    display: flex;
+}
+
+.custom-date input[type="date"] {
+    margin-right: 10px;
+}
+
+.filter-btn {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    flex: 3;
+    padding: 20px;
+}
+
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}

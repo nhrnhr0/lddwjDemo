@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>אפליקציה שלך</title>
+  </head>
+  <body>
+    <!-- עמוד מנהל תפעולים -->
+    <!-- <nav>
+      <a href="/operations-manager/index.html">דף מנהל תיפעול</a>
+      <a href="/operations-director/index.html">דף מנהל פרויקטים</a>
+    </nav> -->
+    <div class="wraper">
+      <h1>עמוד מנהל תפעולים</h1>
+      <div class="page operations-director-welcome">
+        <aside class="filters">
+          <label for="singel-date-input">בחר תאריך</label>
+          <input type="date" id="singel-date-input" value="2023-08-15" />
+          <button class="filter-btn">החל</button>
+
+          <div class="singel-date-results">
+            תאריך: 2023-08-15
+            <br />
+            תדריך בוקר:1 מתוך 2
+            <progress value="1" max="2"></progress>
+            <br />
+            מדידת מפסלים:1 מתוך 2
+            <progress value="1" max="2"></progress>
+            <br />
+            יומן עבודה:0 מתוך 2
+            <progress value="0" max="2"></progress>
+          </div>
+        </aside>
+        <div class="content">
+          <table class="form-table welcome-table">
+            <thead>
+              <tr>
+                <th rowspan="2">פרויקט</th>
+                <th colspan="3">סטטוס הטפסים היום</th>
+              </tr>
+              <tr>
+                <th>תדריך בוקר</th>
+                <th>מדידת מפסלים</th>
+                <th>יומן עבודה</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>פרויקט 1</td>
+                <td><input type="checkbox" checked disabled /></td>
+                <td><input type="checkbox" disabled /></td>
+                <td><input type="checkbox" disabled /></td>
+              </tr>
+              <tr>
+                <td>פרויקט 2</td>
+                <td><input type="checkbox" disabled /></td>
+                <td><input type="checkbox" checked disabled /></td>
+                <td><input type="checkbox" disabled /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="page operations-director-search">
+        <aside class="filters">
+          <div class="filter-section">
+            <h2>פרויקטים</h2>
+            <select multiple>
+              <option value="all" selected>כל הפרויקטים</option>
+              <option value="project1">פרויקט 1</option>
+              <option value="project2">פרויקט 2</option>
+              <!-- הוספת אפשרויות נוספות לפרויקטים -->
+            </select>
+          </div>
+          <div class="filter-section">
+            <h2>סוגי טופסים</h2>
+            <select multiple>
+              <option value="all" selected>כל סוגי הטופסים</option>
+              <option value="morningBrief">תדריך בוקר</option>
+              <option value="levelMeasuring">מדידת מפסלים</option>
+              <option value="workdiary">יומן עבודה</option>
+              <!-- הוספת אפשרויות נוספות לסוגי טופסים -->
+            </select>
+          </div>
+          <div class="filter-section">
+            <h2>מנהלי אתר</h2>
+            <select multiple>
+              <option value="all" selected>כל מנהלי האתר</option>
+              <option value="user1">יוסי</option>
+              <option value="user2">אבי</option>
+              <!-- הוספת אפשרויות נוספות למשתמשים -->
+            </select>
+          </div>
+          <div class="filter-section">
+            <h2>תאריכים</h2>
+            <ul class="quick-links">
+              <li><a href="#">היום</a></li>
+              <li><a href="#">השבוע</a></li>
+              <li><a href="#">החודש</a></li>
+            </ul>
+            <div class="custom-date">
+              <input type="date" placeholder="מתאריך" />
+              <input type="date" placeholder="עד תאריך" />
+            </div>
+            <button class="filter-btn">החל</button>
+          </div>
+        </aside>
+        <main class="content">
+          <table class="form-table">
+            <thead>
+              <tr>
+                <th>פרויקט</th>
+                <th>סוג טופס</th>
+                <th>תאריך</th>
+                <th>טפסים</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>פרויקט 1</td>
+                <td>תדריך בוקר</td>
+                <td>2023-08-15</td>
+                <td><a href="#">הצג טופס</a></td>
+              </tr>
+              <tr>
+                <td>פרויקט 2</td>
+                <td>מדידת מפסלים</td>
+                <td>2023-08-15</td>
+                <td><a href="#">הצג טופס</a></td>
+              </tr>
+              <!-- הוספת שורות נוספות -->
+            </tbody>
+          </table>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
